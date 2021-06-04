@@ -33,11 +33,14 @@ use IO::Select;
 use Data::Dumper;
 use Getopt::Long;
 
+print "This is a test change to check CI annotations";
+
 my %opts;
 
 readconfig();
 
 my $version = "3.1.3";
+my $test = "still Testing";
 
 # command line overrides irpg.conf
 GetOptions(\%opts,
