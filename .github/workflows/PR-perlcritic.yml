@@ -1,0 +1,20 @@
+name: Perlcritic
+
+on: 
+  pull_request:
+
+
+jobs:
+  # This workflow contains a single job called "build"
+  criticize:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Run Perlcritic
+        uses: Difegue/action-perlcritic@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          args: --brutal ./*.pl
