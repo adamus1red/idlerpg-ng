@@ -40,7 +40,7 @@ my %opts;
 readconfig();
 
 my $version = "3.1.3";
-my $test = "Yup Testing";
+my $test = "still Testing";
 
 # command line overrides irpg.conf
 GetOptions(\%opts,
