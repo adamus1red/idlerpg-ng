@@ -33,6 +33,8 @@ use IO::Select;
 use Data::Dumper;
 use Getopt::Long;
 
+print "This is a test change to check CI annotations";
+
 my %opts;
 
 readconfig();
